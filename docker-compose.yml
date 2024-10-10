@@ -4,7 +4,7 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: sqlserver
     environment:
-      - SA_PASSWORD=YourPassword123
+      - SA_PASSWORD=sqlServerLegal2019!
       - ACCEPT_EULA=Y
     ports:
       - "1433:1433"
