@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Services.Models;
-using Services.Models.AppSettings;
-using Services.Models.ExternalApisSettings;
-using Services.Services.Interfaces;
+using Service.Models;
+using Service.Models.AppSettings;
+using Service.Models.ExternalApisSettings;
+using Service.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using tarefas.Corp.Context;
 using tarefas.Corp.Entities;
 
-namespace Services.Services
+namespace Service.Service
 {
     public class SessionService : ISessionService
     {

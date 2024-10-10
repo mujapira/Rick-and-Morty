@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Services.Models.AppSettings;
-using Services.Models.ExternalApisSettings;
-using Services.Services;
-using Services.Services.Interfaces;
+using Service.Models.AppSettings;
+using Service.Models.ExternalApisSettings;
+using Service.Service.Interfaces;
+using Service.Service;
 using tarefas.Corp.Context;
 
 var builder = WebApplication.CreateBuilder(args);

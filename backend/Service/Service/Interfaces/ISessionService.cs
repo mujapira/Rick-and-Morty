@@ -1,7 +1,7 @@
 ﻿using System;
-using Services.Models;
+using Service.Models;
 
-namespace Services.Services.Interfaces
+namespace Service.Service.Interfaces
 {
     public interface ISessionService
     {

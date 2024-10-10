@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Services.Services.Interfaces;
+using Service.Service.Interfaces;
 
 namespace tarefas.Controllers
 {

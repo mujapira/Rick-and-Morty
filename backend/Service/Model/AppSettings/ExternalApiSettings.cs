@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services.Models.ExternalApisSettings
+namespace Service.Models.ExternalApisSettings
 {
     public class ExternalApisSettings
     {
