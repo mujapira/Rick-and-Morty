@@ -9,10 +9,10 @@ namespace Repository.Corp.Entities
     public partial class CharacterEpisodeCharacterEntity
     {
         public int CharacterId { get; set; }
-        public virtual CharacterEnity Character { get; set; }
+        public virtual CharacterEntity Character { get; set; } = new CharacterEntity();
 
         public int EpisodeId { get; set; }
-        public virtual EpisodeEntity Episode { get; set; }
+        public virtual EpisodeEntity Episode { get; set; } = new EpisodeEntity();
     }
 
 }

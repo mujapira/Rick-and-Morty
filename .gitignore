@@ -373,6 +373,11 @@ Backend/PainelJobs.WebApi/appsettings.json
 /data
 /database
 /secrets
+/characters.json
+/episodes.json
+/locations.json
+/character-images/*
+/episode-images/*
 
 *.cache
 

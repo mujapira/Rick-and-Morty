@@ -13,7 +13,7 @@ namespace tarefas.Corp.Context
         public CorpContext(DbContextOptions<CorpContext> options) : base(options) { }
 
         public virtual DbSet<SessionEntity> Sessions { get; set; }
-        public virtual DbSet<CharacterEnity> Characters { get; set; }
+        public virtual DbSet<CharacterEntity> Characters { get; set; }
         public virtual DbSet<EpisodeEntity> Episodes { get; set; }
         public virtual DbSet<LocationEntity> Locations { get; set; }
         public virtual DbSet<CharacterEpisodeCharacterEntity> CharacterEpisodes { get; set; }

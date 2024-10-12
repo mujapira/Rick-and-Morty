@@ -16,6 +16,9 @@ builder.Services.AddOptions<SigningSettings>()
 .Bind(builder.Configuration.GetSection("SigningConfigurations"));
 
 builder.Services.AddScoped<ISessionService, SessionService>();
+builder.Services.AddScoped<ICharacterService, CharacterService>();
+builder.Services.AddScoped<ILocationService, LocationService>();
+builder.Services.AddScoped<IEpisodeService, EpisodeService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
