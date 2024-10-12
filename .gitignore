@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+*.suo
+*.user
+_ReSharper.*
+bin
+/backend/Webapi/obj
+packages
+
 # User-specific files
 *.rsuser
 *.suo
@@ -362,3 +369,13 @@ MigrationBackup/
 FodyWeavers.xsd
 Backend/PainelJobs.WebApi/appsettings.json
 Backend/PainelJobs.WebApi/appsettings.json
+
+/data
+/database
+/secrets
+
+*.cache
+
+*.AssemblyInfoInputs.cache
+
+*/backend/WebApi/obj"

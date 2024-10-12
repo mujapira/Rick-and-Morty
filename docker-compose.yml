@@ -3,33 +3,35 @@ services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: sqlserver
+    user: root
     environment:
-      - SA_PASSWORD=sqlServerLegal2019!
+      - MSSQL_SA_PASSWORD=sqlServerLegal2019!
       - ACCEPT_EULA=Y
     ports:
       - "1433:1433"
     volumes:
-      - ./database:/var/opt/mssql
+      - ./data:/var/opt/mssql/data
+      - ./log:/var/opt/mssql/log
+      - ./secrets:/var/opt/mssql/secrets
+    # nextjs:
+    #   build:
+    #     context: ./frontend
+    #     dockerfile: Dockerfile
+    #   container_name: nextjs
+    #   ports:
+    #     - "3000:3000"
+    #   depends_on:
+    #     - sqlserver
 
-  nextjs:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: nextjs
-    ports:
-      - "3000:3000"
-    depends_on:
-      - sqlserver
-
-  dotnetapi:
-    build:
-      context: ./backend
-      dockerfile: Webapi/Dockerfile
-    container_name: dotnetapi
-    ports:
-      - "5000:5000"
-    depends_on:
-      - sqlserver
+    # dotnetapi:
+    #   build:
+    #     context: ./backend
+    #     dockerfile: Webapi/Dockerfile
+    #   container_name: dotnetapi
+    #   ports:
+    #     - "5000:5000"
+    #   depends_on:
+    #     - sqlserver
 
 volumes:
   sqlvolume:
